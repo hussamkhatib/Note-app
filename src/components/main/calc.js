@@ -1,14 +1,21 @@
 import React from 'react'
-
 import styled from 'styled-components'
+import Buttons from './buttons'
 
-const Calc = () => {
-    const Wrapper = styled.div`
-    grid-column:3;
-    grid-row:2;`    
+const Wrapper = styled.div`
+`
+
+const Res = styled.div`
+`
+
+const Calc = ({ Result }) => {
+ 
     return (
         <Wrapper>
-            
+            <Res>
+                Result: {Result} 
+            </Res>      
+            <Buttons />  
         </Wrapper>
     )
 }
